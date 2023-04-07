@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 06</title>
+    <script src="./app.js"></script>
+</head>
+<body>
+
+    <h1 class="custom-heading">Using a Nested for loop,,,,Here and also console screen</h1>
+
+    <!-- HTML code to display the pattern -->
+<div id="pattern"></div>
+
+<!-- JavaScript code to construct the pattern -->
+<script>
+  // Define the number of rows
+  const rows = 5;
+
+  // Get a reference to the pattern element
+  const patternElement = document.getElementById('pattern');
+
+  // Construct the pattern using nested loops
+  for (let i = 1; i <= rows; i++) {
+    let pattern = '';
+    for (let j = 1; j <= i; j++) {
+      pattern += '*';
+    }
+    // Create a new <p> element with the pattern and append it to the pattern element
+    const newParagraph = document.createElement('p');
+    newParagraph.textContent = pattern;
+    patternElement.appendChild(newParagraph);
+    console.log(pattern);
+  }
+</script>
+
+    
+</body>
+</html>
